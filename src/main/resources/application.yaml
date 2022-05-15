@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:customers-bank-db
+  driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      #4dal-auto: create-drop
+      ddl-auto: create
+      SQL: debug
+  h2:
+    console:
+      enabled: true
